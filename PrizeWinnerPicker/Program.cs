@@ -43,7 +43,7 @@ namespace PrizeWinnerPicker
             }
             var orderedEntries = (
                 from entries in numEntries
-                orderby entries.Value*-1
+                orderby entries.Value*1
                 select new
                 {
                     entries.Key,
